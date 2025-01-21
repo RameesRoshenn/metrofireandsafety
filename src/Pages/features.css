@@ -1,0 +1,120 @@
+.features-section {
+    background-color: #e8e2d1;
+    padding: 80px 200px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    
+  }
+  
+  .features-item {
+    padding: 20px;
+    position: relative;
+    border-right: 1px solid #cab9b9; 
+    font-family: "Bona Nova SC", serif;
+    
+  }
+   
+  
+  
+  .features-item:nth-child(3n) {
+    border-right: none;
+  }
+  
+  .features-item.border-bottom {
+    border-bottom: 1px solid #cab9b9 !important;
+  }
+
+
+  
+  @media (max-width: 1200px) {
+    .features-section {
+      padding: 80px 100px; 
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .features-section {
+      padding: 80px 50px; 
+    }
+  }
+
+  
+.custom-button {
+
+  color: white;
+  font-weight: bold;
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 20px 0 20px 0;
+  padding: 15px 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Bona Nova SC", serif;
+  transition: background-color 0.5s ease-in-out, transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color:black;
+  border: 3px solid red;
+  transform: scale(1.05);
+}
+  
+  
+  
+  
+  @media (max-width: 767px) {
+  
+    .features-section {
+      padding: 60px 20px;
+    }
+  
+    .features-item {
+      border-right: none;
+      border-bottom: 1px solid #cab9b9;
+    }
+    .features-item:nth-child(3n) {
+      border-bottom: 1px solid #cab9b9;
+    }
+    .features-item:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  .features-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .features-item h3 {
+    
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .features-item p {
+    
+    font-weight: 400;
+  }
+
+  
+.custom-button {
+  color: white;
+  font-weight: bold;
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 20px 0 20px 0;
+  padding: 15px 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Bona Nova SC", serif;
+  transition: background-color 0.5s ease-in-out, transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color:black;
+  border: 3px solid red;
+  transform: scale(1.05);
+}

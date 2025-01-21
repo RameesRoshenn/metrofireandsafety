@@ -1,0 +1,165 @@
+/* Main Section Styling for Services */
+.services-section {
+  position: relative;
+  background-image: url('../Assets/home01.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 85%, 34% 99%, 34% 99%, 0 86%, 0 0);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.services-content {
+  max-width: 700px;
+  text-align: left;
+  padding-left: 150px;
+  font-family: "Bona Nova SC", serif;
+}
+
+.services-section h1 {
+  padding-top: 20px;
+  font-size: 4em;
+  font-weight: 580;
+  margin-bottom: 20px;
+ text-shadow: black;
+}
+
+.services-section p {
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    height: 50vh;
+  }
+
+  .services-content {
+    padding-left: 0px;
+  }
+
+  .services-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    padding-top: 50px;
+  }
+
+  .services-section p {
+    font-size: 0.8em;
+  }
+}
+
+/* Service Cards Container */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.top-title{
+  font-family: "Bona Nova SC", serif;
+ 
+}
+
+
+/* Individual Service Card */
+.service {
+  background-color: #fff;
+  margin: 20px;
+  width: 300px;
+  height: 390px; /* Set a fixed height for uniformity */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside the card */
+.service img {
+  width: 100%;
+  height: 55%; /* Takes up the top half of the card */
+  object-fit: cover;
+  border-bottom: 2px solid #eee; /* Optional border between image and text */
+}
+
+/* Text below the image */
+.service .service-text {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  
+  flex-grow: 1;
+}
+
+.service h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.service p {
+  font-size: 14px;
+  
+ 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .service {
+    width: calc(50% - 40px); /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+    width: 100%; /* Full width for small screens */
+  }
+}
+
+/* Last Section: Call to Action */
+.service-last {
+  height: 350px;
+  background-color: #e8e8ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.service-last h3 {
+  font-size: 20px;
+}
+
+/* Custom Button Style */
+.custom-button2 {
+  color: black;
+  font-weight: bold;
+  background: transparent;
+  border: 3px solid white;
+  padding: 15px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.5s ease-in-out, transform 0.2s;
+}
+
+.custom-button2:hover {
+  background-color: transparent;
+  color: black;
+  border: 3px solid red;
+  transform: scale(1.05);
+}

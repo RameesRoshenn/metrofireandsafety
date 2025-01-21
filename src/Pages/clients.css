@@ -1,0 +1,151 @@
+.clients-container {
+  text-align: center;
+  padding: 20px;
+  font-family: "Bona Nova SC", serif;
+}
+
+.clients-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Carousel container */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Reduced space between logos */
+  position: relative;
+  overflow: hidden; /* Hide logos outside the container */
+  width: 100%; /* Full width */
+  height: 150px; /* Adjust height for logo display */
+  flex-wrap: nowrap; /* Keep logos in a single line */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for dragging effect */
+}
+
+/* Style for each logo */
+.carousel-logo {
+  width: 100px; /* Default logo size */
+  height: auto;
+  opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  object-fit: contain; /* Make sure logo fits within the container */
+}
+
+/* Active logo styling (highlighted) */
+.carousel-logo.active {
+  transform: scale(1.8); /* Make the active logo larger */
+  opacity: 1;
+}
+
+/* Dots at the bottom of the carousel */
+.dots {
+  margin-top: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active-dot {
+  background-color: black;
+}
+
+/* Media Queries for responsiveness */
+
+/* For devices smaller than 768px (Tablets and small screens) */
+@media (max-width: 768px) {
+  .clients-heading {
+    font-size: 1.5rem; /* Smaller font for smaller screens */
+  }
+
+  .carousel {
+    height: 120px; /* Adjust carousel height for smaller screens */
+    gap: 10px; /* Reduced gap between logos */
+  }
+
+  .carousel-logo {
+    width: 80px; /* Smaller logo size */
+  }
+
+  .dots {
+    margin-top: 10px;
+  }
+}
+
+/* For devices smaller than 480px (Mobile screens) */
+@media (max-width: 480px) {
+  .clients-heading {
+    font-size: 1.2rem; /* Even smaller font for very small screens */
+  }
+
+  .carousel {
+    height: 100px; /* Adjust carousel height */
+    gap: 5px; /* Further reduced gap between logos */
+  }
+
+  .carousel-logo {
+    width: 60px; /* Smaller logo size on mobile */
+  }
+
+  .dots {
+    margin-top: 8px;
+  }
+}
+
+/* OUR MEMBERSHIP Section */
+.membership-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.membership-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.membership-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.membership-image {
+width: 400px; 
+
+ border-radius: 10px;
+}
+
+/* Media Queries for responsive OUR MEMBERSHIP section */
+
+/* For devices smaller than 768px (Tablets and small screens) */
+@media (max-width: 768px) {
+  .membership-heading {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .membership-image {
+    max-width: 90%; /* Smaller image on tablets */
+  }
+}
+
+/* For devices smaller than 480px (Mobile screens) */
+@media (max-width: 480px) {
+  .membership-heading {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .membership-image {
+    max-width: 80%; /* Further reduce image size on mobile */
+  }
+}

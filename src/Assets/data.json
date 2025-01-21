@@ -1,0 +1,104 @@
+{
+    "Servicesdata": [
+      {
+        "id": 1,
+        "title": "FIRE EXTINGUISHER REFILLING",
+        "description": "Ensure your safety with professional fire extinguisher refilling services, restoring full functionality and reliability for emergency protection.",
+        "image": "fireextinguisher.jpg"
+      },
+      {
+        "id": 2,
+        "title": "FIRE NOC",
+        "description": "Streamline compliance with our expert Fire NOC services, ensuring your property meets all fire safety regulations for seamless approvals.",
+        "image": "firenoc.jpg"
+      },
+      {
+        "id": 3,
+        "title": "FIRE HYDRANT SYSTEM",
+        "description": "Equip your property with a robust fire hydrant system designed to provide reliable water supply during fire emergencies.",
+        "image": "firehydrantsystem.jpg"
+      },
+      {
+        "id": 4,
+        "title": "SPRINKLER SYTEM",
+        "description": "Protect lives and property with advanced sprinkler systems that activate automatically to control and suppress fires efficiently.",
+        "image": "sprinklersystem.jpg"
+      },
+      {
+        "id": 5,
+        "title": "PUMP ROOM RISER SYSTEM",
+        "description": "Ensure optimal water pressure for firefighting with a well-designed pump room and riser system tailored to your needs.",
+        "image": "pumpriser.jpg"
+      },
+      {
+        "id": 6,
+        "title": "FIRE ALARM SYSTEM",
+        "description": "Stay alert and responsive with cutting-edge fire alarm systems that provide early detection and prompt warning in emergencies.",
+        "image": "firesystem.jpg"
+      },
+      {
+        "id": 7,
+        "title": "PUBLIC ADDRESS SYSTEM",
+        "description": "Enhance safety and communication during critical situations with a reliable public address system for clear and effective announcements.",
+        "image": "publicsystem.jpg"
+      },
+      {
+        "id": 8,
+        "title": "FIRE SYSTEM CONSULTANCY ",
+        "description": "Get expert guidance and tailored solutions for designing, installing, and maintaining comprehensive fire safety systems.",
+        "image": "fireconsultant.jpg"
+      },
+      {
+        "id": 9,
+        "title": "RETICULATED GAS SYSTEM",
+        "description": "Ensure safe and efficient gas distribution with our professionally designed and installed reticulated gas systems.",
+        "image": "gassyetm.jpg"
+      },
+      {
+        "id": 10,
+        "title": "REFURBISHMENT OF SYSTEM",
+        "description": "Upgrade and modernize your fire safety systems with our comprehensive refurbishment services, ensuring optimal performance.",
+        "image": "refurbisment.jpg"
+      }
+      ,
+      {
+        "id": 11,
+        "title": "ANNUAL MAINTENANCE CONTRACT (AMC)",
+        "description": "Maintain your fire safety equipment in top condition with our annual maintenance services, offering regular inspections and prompt servicing.",
+        "image": "annaulcontract.jpg"
+      }
+      
+    ],
+    "Projectdata":[
+      {
+        "id": 1,
+        "title": "Sea Zone Resort",
+        "place": "Kuttayi",
+        "image": "seazone.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Airport Garden Auditorium",
+        "place": "Kondotty",
+        "image": "airport garden1.jpeg"
+      },
+      {
+        "id": 3,
+        "title": "Hotel Sultan Palace",
+        "place": "Mongam",
+        "image": "hotelsulthan.jpeg"
+      },
+      {
+        "id": 4,
+        "title": "Shalimar Convention Centre",
+        "place": "Monplalal",
+        "image": "shalimar.avif"
+      },
+      {
+        "id": 5,
+        "title": "OYO Rooms",
+        "place": "Kottaakal",
+        "image": "oyoroom"
+      }
+    ]
+  }

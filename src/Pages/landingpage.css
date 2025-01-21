@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.intro {
+  width: 100%;
+  height: 90vh;
+  margin-top: 45px;
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-image 1s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.intro-text {
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  animation: fade-in 1s ease-in-out;
+}
+
+.intro-text h1,
+.intro-text h4 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+}
+
+.intro-text h1 {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.custom-button {
+  color: white;
+  font-weight: bold;
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 20px 0 20px 0;
+  padding: 15px 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Bona Nova SC", serif;
+  transition: background-color 0.5s ease-in-out, transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color:black;
+  border: 3px solid red;
+  transform: scale(1.05);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    height: 550px;
+    margin-top: 35px;
+  }
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 30px;
+  }
+  .custom-button{
+    margin-bottom: 30px;
+  }
+}

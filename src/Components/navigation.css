@@ -1,0 +1,219 @@
+/* General Navbar Styles */
+.navbar {
+  width: 100vw;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+/* Company Name */
+.company-name {
+  font-family: "Cabin", serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: left;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+
+/* Brand Text Container */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2px;
+  margin-left: -25px;
+}
+
+.brand-line1 {
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+.brand-line2 {
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+.brand-line3 {
+  font-size: 0.8em;
+  margin: 0;
+  color: red;
+  text-align: center;
+}
+
+/* collapse */
+.custom-toggler {
+  border: none;
+  background-color: transparent;
+  color: black;
+  margin-right: -20px;
+}
+
+.custom-toggler .bi {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.custom-toggler.collapsed .bi {
+  color: black;
+}
+
+/* Navbar Collapse Menu - Remove background and border */
+.navbar-collapse.collapse.show {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.navbar-collapse .navbar-nav {
+  border: none !important;
+}
+
+/* Focus and active states for collapse button */
+.custom-toggler:focus,
+.custom-toggler:active {
+  outline: none;
+  border: none !important;
+}
+
+.custom-toggler:focus .bi,
+.custom-toggler:active .bi {
+  color: black !important;
+}
+
+/* If you need to remove background color for the collapse toggle */
+.custom-toggler:not(.collapsed) {
+  background-color: transparent !important;
+}
+
+/* Collapse Menu Styles */
+.navbar-collapse {
+  border: none !important;
+  background-color: white !important; /* White background for the collapsed navbar */
+  box-sizing: border-box; /* Ensure proper sizing */
+ /* Add some padding to ensure the last link stays inside the container */
+}
+
+/* Navbar Links */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-family: "Bona Nova SC", serif;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: red !important;
+  transform: scale(1.1);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  background: black;
+}
+
+/* Logo Styling */
+.logo-large {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo-small {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    margin: -35px -10px;
+  }
+
+  .company-name {
+    font-size: 1em;
+  }
+
+  .brand-line1 {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+  }
+
+  .brand-line2 {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+
+  .brand-line3 {
+    font-size: 0.7em;
+    white-space: normal;
+    margin-top: 5px;
+  }
+
+  .navbar-collapse {
+    flex-basis: 100%;
+    justify-content: center;
+    padding-bottom: 40px; 
+
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .logo-large {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+  }
+}
+
+/* Last Nav Link Fix in Collapsed State */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    padding-top: 10px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 12px;
+  }
+
+  /* Add padding to the last nav-link to prevent overlap */
+  .navbar-nav .nav-link:last-child {
+    padding-bottom: 10px;
+  }
+}
+
+/* Small Screen Logo Styling */
+@media (max-width: 576px) {
+  .logo-small {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

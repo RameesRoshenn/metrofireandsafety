@@ -1,0 +1,105 @@
+/* Footer Styling */
+.footer {
+    background-color: black;
+    color: white;
+    font-family: "Cabin", serif;
+    min-height: 10vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  
+  
+  /* Footer Content */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 1rem;
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column li:hover {
+    color: red;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: red;
+  }
+  
+  /* Google Map Button */
+  .map-button {
+ margin-top: 20px;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .map-button:hover {
+    color: red;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid gray;
+  }
+  
+  /* Responsive Styling */
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      align-items: center;
+   
+     
+    }
+  
+    .footer-column {
+      width: 300px;
+    }
+  }
+  

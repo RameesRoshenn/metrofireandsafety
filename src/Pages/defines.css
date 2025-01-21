@@ -1,0 +1,85 @@
+.defines-section {
+    background-color:#4a8259;
+    padding: 40px 200px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    
+    
+  }
+  .defines-section h1{
+    font-family: "Bona Nova SC", serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 50px;
+    color: whitesmoke;
+
+  }
+  
+  .defines-item {
+    padding: 20px;
+    position: relative;
+    border-right: 1px solid #cab9b9; 
+    color: #d8e3db;
+  }
+  
+  .defines-item:nth-child(3n) {
+    border-right: none;
+  }
+  
+  .defines-item.border-bottom {
+    border-bottom: 1px solid #cab9b9 !important;
+  }
+  
+  @media (max-width: 1200px) {
+    .defines-section {
+      padding: 80px 100px; 
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .defines-section {
+      padding: 80px 50px; 
+    }
+  }
+  
+  
+  
+  
+  @media (max-width: 767px) {
+  
+    .defines-section {
+      padding: 60px 20px;
+    }
+  .defines-section h1{
+    font-size: 35px;
+  }
+    .defines-item {
+      border-right: none;
+      border-bottom: 1px solid #cab9b9;
+    }
+    .defines-item:nth-child(3n) {
+      border-bottom: 1px solid #cab9b9;
+    }
+    .defines-item:last-child {
+      border-bottom: none;
+    }
+    
+  }
+  
+  .defines-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .defines-item h3 {
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .defines-item p {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+  }
+  
