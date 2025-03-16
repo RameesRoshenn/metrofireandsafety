@@ -32,7 +32,7 @@ function Contact() {
       message: formData.projectDescription,
     };
 
-    emailjs.send('service_vzk3ese', 'template_5da4ilc', templateParams, 'c2JbvBhFl_bzrJdwN')
+    emailjs.send('service_ilbd665', 'template_vyo06mv', templateParams, '-8Ksgzn7pwd5oXeEU')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Message sent successfully!');

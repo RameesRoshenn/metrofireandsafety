@@ -26,7 +26,7 @@ const defines= [
     },
     {
       icon: <SlCalender size={48} />,
-      title: '23 Years In Business',
+      title: '13 Years In Business',
       description: 'Our company is committed to long-term excellence'
     },
     {

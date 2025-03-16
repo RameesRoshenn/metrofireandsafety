@@ -113,7 +113,7 @@
 }
 
 /* Responsive Grid */
-.row {
+ .product-section .row {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;

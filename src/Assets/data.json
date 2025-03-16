@@ -69,36 +69,104 @@
       }
       
     ],
-    "Projectdata":[
-      {
-        "id": 1,
-        "title": "Sea Zone Resort",
-        "place": "Kuttayi",
-        "image": "seazone.jpg"
-      },
-      {
-        "id": 2,
-        "title": "Airport Garden Auditorium",
-        "place": "Kondotty",
-        "image": "airport garden1.jpeg"
-      },
-      {
-        "id": 3,
-        "title": "Hotel Sultan Palace",
-        "place": "Mongam",
-        "image": "hotelsulthan.jpeg"
-      },
-      {
-        "id": 4,
-        "title": "Shalimar Convention Centre",
-        "place": "Monplalal",
-        "image": "shalimar.avif"
-      },
-      {
-        "id": 5,
-        "title": "OYO Rooms",
-        "place": "Kottaakal",
-        "image": "oyoroom"
-      }
-    ]
-  }
+    
+      "Projectdata": [
+        {
+          "id": 1,
+          "title": "Sea Zone Resort",
+          "place": "Kuttayi",
+          "image": "/Assets/Project/seazone.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Airport Garden Auditorium",
+          "place": "Kondotty",
+          "image": "/Assets/Project/airport garden1.jpeg"
+        },
+        {
+          "id": 3,
+          "title": "Hotel Sultan Palace",
+          "place": "Mongam",
+          "image": "/Assets/Project/hotelsulthan.jpeg"
+        },
+        {
+          "id": 4,
+          "title": "Shalimar Convention Centre",
+          "place": "Monplalal",
+          "image": "/Assets/Project/shalimar.avif"
+        },
+        {
+          "id": 5,
+          "title": "OYO Rooms",
+          "place": "Kottakkal",
+          "image": "/Assets/Project/oyoroom.jpg"
+        },
+        {
+          "id": 6,
+          "title": "OPS Royal Palace",
+          "place": "Kottakkal",
+          "image": "/Assets/Project/opsroyal.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Soorya Maternity Hospital",
+          "place": "Tirur",
+          "image": "/Assets/Project/sooryahos.jpeg"
+        },
+        {
+          "id": 8,
+          "title": "Nandilath G-Mart",
+          "place": "Tirur",
+          "image": "/Assets/Project/nandilath.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Mayoori Furniture",
+          "place": "Tirur",
+          "image": "/Assets/Project/mayoori.jpeg"
+        }
+        ,
+        {
+          "id": 10,
+          "title": "Atland Convention Centre",
+          "place": "Kakkanchery",
+          "image": "/Assets/Project/atland.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Simla Mall ",
+          "place": "Calicut",
+          "image": "/Assets/Project/simla.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Inic Convention Centre",
+          "place": "Nattukal, Palakkad ",
+          "image": "/Assets/Project/inic.avif"
+        },
+        {
+          "id": 13,
+          "title": "Max Fashion",
+          "place": "Valanchery",
+          "image": "/Assets/Project/maxvala.png"
+        },
+        {
+          "id": 14,
+          "title": "Sacred Heart Secondary School",
+          "place": "Puthuparambu",
+          "image": "/Assets/Project/sacretheart.jpeg"
+        },
+        {
+          "id": 15,
+          "title": "Bharatiya Vidya Bhavan",
+          "place": "Thirunavaya",
+          "image": "/Assets/Project/bhavan.jpeg"
+        }
+
+
+
+
+       
+      ]
+    }
+    

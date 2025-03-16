@@ -5,6 +5,7 @@
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Company Name */
@@ -26,14 +27,7 @@
   margin-left: -25px;
 }
 
-.brand-line1 {
-  font-size: 1.3em;
-  color: black;
-  font-weight: bold;
-  margin: 0;
-}
-
-.brand-line2 {
+.brand-line1, .brand-line2 {
   font-size: 1.3em;
   color: black;
   font-weight: bold;
@@ -46,57 +40,40 @@
   color: red;
   text-align: center;
 }
-
-/* collapse */
+/* Ensure Navbar Toggle (Hamburger Menu) Stays Transparent */
 .custom-toggler {
   border: none;
-  background-color: transparent;
-  color: black;
-  margin-right: -20px;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
+/* Remove background color when active or focused */
+.custom-toggler:focus, 
+.custom-toggler:active {
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure the icon remains visible */
 .custom-toggler .bi {
   font-size: 1.5rem;
-  color: black;
-}
-
-.custom-toggler.collapsed .bi {
-  color: black;
-}
-
-/* Navbar Collapse Menu - Remove background and border */
-.navbar-collapse.collapse.show {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-.navbar-collapse .navbar-nav {
-  border: none !important;
-}
-
-/* Focus and active states for collapse button */
-.custom-toggler:focus,
-.custom-toggler:active {
-  outline: none;
-  border: none !important;
-}
-
-.custom-toggler:focus .bi,
-.custom-toggler:active .bi {
   color: black !important;
 }
 
-/* If you need to remove background color for the collapse toggle */
-.custom-toggler:not(.collapsed) {
-  background-color: transparent !important;
-}
 
-/* Collapse Menu Styles */
+/* Navbar Collapse */
 .navbar-collapse {
   border: none !important;
-  background-color: white !important; /* White background for the collapsed navbar */
-  box-sizing: border-box; /* Ensure proper sizing */
- /* Add some padding to ensure the last link stays inside the container */
+  /* background-color: white !important;  */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Ensure background stays white when open */
+.navbar-collapse.show {
+  /* background-color: white !important; */
 }
 
 /* Navbar Links */
@@ -131,15 +108,13 @@
   background: black;
 }
 
-/* Logo Styling */
-.logo-large {
-  display: block;
-  width: 100%;
-  height: auto;
+/* Navbar Visibility on Scroll */
+.navbar-hidden {
+  transform: translateY(-100%);
 }
 
-.logo-small {
-  display: none;
+.navbar-visible {
+  transform: translateY(0);
 }
 
 /* Responsive Styles */
@@ -148,31 +123,15 @@
     margin: -35px -10px;
   }
 
-  .company-name {
-    font-size: 1em;
-  }
-
-  .brand-line1 {
-    font-size: 1.2em;
-    letter-spacing: 3px;
-  }
-
-  .brand-line2 {
-    font-size: 1em;
-    letter-spacing: 2px;
-  }
-
-  .brand-line3 {
-    font-size: 0.7em;
-    white-space: normal;
-    margin-top: 5px;
+  .navbar {
+    height: auto; /* Allow dynamic height */
+    padding: 1rem 1rem;
   }
 
   .navbar-collapse {
-    flex-basis: 100%;
-    justify-content: center;
+    padding-top: 0px;
     padding-bottom: 40px; 
-
+    /* background-color: white !important; */
   }
 
   .navbar-nav .nav-link {
@@ -183,18 +142,10 @@
   .logo-large {
     display: none;
   }
-
-  .logo-small {
-    display: block;
-  }
 }
 
-/* Last Nav Link Fix in Collapsed State */
+/* Fix last nav link padding in collapsed menu */
 @media (max-width: 768px) {
-  .navbar-collapse {
-    padding-top: 10px;
-  }
-
   .navbar-nav {
     width: 100%;
     text-align: center;
@@ -204,7 +155,6 @@
     padding: 12px;
   }
 
-  /* Add padding to the last nav-link to prevent overlap */
   .navbar-nav .nav-link:last-child {
     padding-bottom: 10px;
   }

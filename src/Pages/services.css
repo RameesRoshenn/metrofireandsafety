@@ -1,7 +1,7 @@
 /* Main Section Styling for Services */
 .services-section {
   position: relative;
-  background-image: url('../Assets/home01.jpg');
+  background-image: url('../Assets/servicehead.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -132,7 +132,7 @@
 /* Last Section: Call to Action */
 .service-last {
   height: 350px;
-  background-color: #e8e8ca;
+  background-color: rgb(169, 33, 33);
   display: flex;
   flex-direction: column;
   justify-content: center;

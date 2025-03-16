@@ -8,34 +8,51 @@ import smallScreenLogo from '../Assets/smallScreenLogo.png';
 
 function Navigation() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [isCollapsed, setIsCollapsed] = useState(true); // Track collapse state
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 768); // Update based on your breakpoint
+      setIsSmallScreen(window.innerWidth <= 768);
     };
 
-    checkScreenSize(); // Check on initial render
-    window.addEventListener('resize', checkScreenSize); // Add event listener
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
 
-    return () => window.removeEventListener('resize', checkScreenSize); // Cleanup
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   const handleToggle = () => {
-    setIsCollapsed(!isCollapsed); // Toggle collapse state
+    setIsCollapsed(!isCollapsed);
   };
 
   return (
-    <Navbar className="navbar" style={{ backgroundColor: 'white' }} expand="lg" fixed="top">
+    <Navbar
+      className={`navbar ${visible ? 'navbar-visible' : 'navbar-hidden'}`}
+      expand="lg"
+      fixed="top"
+    >
       <div className="container">
         <Navbar.Brand href="#page-top" className="d-flex align-items-center company-name">
-          {!isSmallScreen && (
+          {!isSmallScreen ? (
             <>
               <img
                 src={logo}
                 width="100%"
                 height="70"
-                className="d-inline-block align-top "
+                className="d-inline-block align-top"
                 alt="Large Logo"
               />
               <div className="brand-text">
@@ -44,8 +61,7 @@ function Navigation() {
                 <p className="brand-line3">Fire & Safety Solutions</p>
               </div>
             </>
-          )}
-          {isSmallScreen && (
+          ) : (
             <img
               src={smallScreenLogo}
               width="150"
@@ -56,17 +72,14 @@ function Navigation() {
           )}
         </Navbar.Brand>
 
-        {/* Navbar toggle button with Bootstrap icon */}
         <Navbar.Toggle
-  aria-controls="basic-navbar-nav"
-  className={`custom-toggler ${isCollapsed ? 'collapsed' : ''}`}
-  onClick={handleToggle}
->
-  <i className={`bi bi-menu-button-wide text-dark`}></i> {/* Icon will always be dark */}
-</Navbar.Toggle>
+          aria-controls="basic-navbar-nav"
+          className={`custom-toggler ${isCollapsed ? 'collapsed' : ''}`}
+          onClick={handleToggle}
+        >
+          <i className="bi bi-menu-button-wide text-dark"></i>
+        </Navbar.Toggle>
 
-
-        {/* Navbar links */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link className="nav-link mx-2" href="/">Home</Nav.Link>

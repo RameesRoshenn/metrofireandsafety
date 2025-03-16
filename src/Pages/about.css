@@ -47,6 +47,7 @@
     text-align: left;
   }
   
+  
   .about-images {
     display: flex;
     flex-direction: column;
@@ -112,11 +113,15 @@
 
 /* homeabout */
 
+
 .homeabout-text{
   padding: 0px 20px;
   font-family: "Cabin", serif;
   text-align: left;
 }
+
+
+
 
 /* Core Values - General Styling */
 .core-value-item {
@@ -136,6 +141,27 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+
+
+/* animnation */
+/* Animation class to move content from bottom */
+@keyframes slideUp {
+  from {
+    transform: translateY(100px); /* Start from below */
+    opacity: 0; /* Start as invisible */
+  }
+  to {
+    transform: translateY(0); /* Move to normal position */
+    opacity: 1; /* Make visible */
+  }
+}
+
+.animate-from-bottom {
+  animation: slideUp 0.5s ease-out forwards; /* Apply the animation */
+  opacity: 0; /* Initially hide the element */
+}
+
 
 /* Responsive adjustment to always keep 2 items per row */
 @media (max-width: 576px) {
@@ -178,5 +204,21 @@
       margin-top: -30px;
     }
 
+    
+
+    .homeabout-text{
+      
+  text-align: center; /* Center the text horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  height: 100%; /* Ensure the column takes the full height */
+    }
+
+    .row .g-4{
+      display: flex;
+      align-items: center;
+      padding-right: 80px;
+    }
   }
   
