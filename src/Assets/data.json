@@ -142,7 +142,7 @@
           "id": 12,
           "title": "Inic Convention Centre",
           "place": "Nattukal, Palakkad ",
-          "image": "/Assets/Project/inic.avif"
+          "image": "/Assets/Project/inic.jpg"
         },
         {
           "id": 13,
@@ -159,8 +159,20 @@
         {
           "id": 15,
           "title": "Bharatiya Vidya Bhavan",
-          "place": "Thirunavaya",
+          "place": "Edappal",
           "image": "/Assets/Project/bhavan.jpeg"
+        },
+        {
+          "id": 16,
+          "title": "Golden Palace Auditorium",
+          "place": "Cheroor",
+          "image": "/Assets/Project/goldenpalace.jpg"
+        },
+        {
+          "id": 17,
+          "title": "Nalanda Auditorium",
+          "place": "Peradiyoor",
+          "image": "/Assets/Project/Nalanda.jpg"
         }
 
 

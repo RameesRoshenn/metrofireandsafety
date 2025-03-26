@@ -54,7 +54,7 @@ function Contact() {
         <h5>Thank you for reaching out to us! We aim to respond to all inquiries within two business days. If you need immediate assistance, please call us during our regular business hours.</h5>
         <div className="logo-container">
           <FaPhone />
-          <p>+91 9846860029</p>
+          <p>+91 8943332058 </p>
         </div>
       </div>
       <div className="contact-form">
