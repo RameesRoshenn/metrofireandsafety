@@ -22,9 +22,7 @@ const initialLogos = [
 
 function Clients() {
   const [logos, setLogos] = useState(initialLogos);
-
-  
-  // const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const carouselRef = useRef(null);
