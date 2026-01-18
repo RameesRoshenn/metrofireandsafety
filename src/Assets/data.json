@@ -224,7 +224,7 @@
           "id": 25,
           "title": "Basmala English School",
           "place": "Iringavoor",
-          "image": "/Assets/Project/Nalanda.jpg"
+          "image": "/Assets/Project/basmala.jpeg"
         },
          {
           "id": 26,
@@ -266,14 +266,9 @@
           "image": "/Assets/Project/marthoma.jpeg"
         },
          
+      
          {
           "id": 32,
-          "title": "Zudio",
-          "place": "Tirur",
-          "image": "/Assets/Project/zudio.jpeg"
-        },
-         {
-          "id": 33,
           "title": "Grand Convention Centre",
           "place": "Tanur",
           "image": "/Assets/Project/grand.jpeg"
